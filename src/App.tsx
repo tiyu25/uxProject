@@ -1,13 +1,8 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import MainPage from "./pages/MainPage"
+import AppRouter from "./routes/AppRouter"
 
 const App = (): React.JSX.Element => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<MainPage />}/>
-			</Routes>
-		</BrowserRouter>
+		<AppRouter />
 	)
 }
 
