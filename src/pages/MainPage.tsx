@@ -1,8 +1,6 @@
 const MainPage = (): React.JSX.Element => {
-    return (
-        <>
-        </>
-    )
-}
+  return <></>;
+};
 
 export default MainPage;
+//Main Page
