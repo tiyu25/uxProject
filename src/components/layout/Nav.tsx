@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
+import { menuData } from "../../constants/menuData";
 
 const Nav = (): React.JSX.Element => {
     return (
         <nav className="gnb">
             <ul>
-                <li><Link to="/">INSPIRE</Link></li>
-                <li><Link to="/">HERITAGE</Link></li>
-                <li><Link to="/">NEW BEAUTY</Link></li>
-                <li><Link to="/">ESG</Link></li>
-                <li><Link to="/">PRESS</Link></li>
+                {menuData.map((menu, idx) => (
+                    <li key={idx}><Link to={menu.path}>{menu.name}</Link></li>
+                ))}
             </ul>
         </nav>
     )

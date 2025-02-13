@@ -5,7 +5,7 @@ import Nav from "./Nav";
 const Header = (): React.JSX.Element => {
     return (
         <header>
-            <div className="thead">
+            <div className="thead wrap-inner">
                 <Nav />
                 <Logo />
                 <HeaderActions />

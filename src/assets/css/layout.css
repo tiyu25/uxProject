@@ -8,6 +8,12 @@ button {
     padding: 0;    
 }
 
+.wrap-inner {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 header {
     background: #fff;
     box-shadow: 0 4px 8px #0000000A;
@@ -18,10 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    width: 1500px;
     height: var(--header-height);
-    margin: 0 auto;
 }
 
 .thead .gnb ul {
@@ -56,3 +59,95 @@ header {
 .thead .right .lang-btn img {
     width: 32px;
 }
+
+/******************** Footer ********************/
+.footer {
+    background: #000;
+}
+
+.footer .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 0 40px;
+    border-top: 3px solid #222;
+}
+
+/* 푸터 메뉴 */
+.footer .foot-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.footer .foot-menu a {
+    font-size: 22px;
+    color: #fff;
+}
+
+/* 푸터 SNS */
+.footer .sns-link-btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .sns-link-btn a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+}
+
+.footer .facebook a {
+    background: url(../img/ico_facebook.svg)center center no-repeat;
+}
+
+.footer .linked a {
+    background: url(../img/ico_linkedin.svg)center center no-repeat;
+}
+
+.footer .instagram a {
+    background: url(../img/ico_insta.svg)center center no-repeat;
+}
+
+.footer .youtube a {
+    background: url(../img/ico_youtube.svg)center center no-repeat;
+}
+
+.footer .naver a {
+    background: url(../img/naver-post.svg)center center no-repeat;
+}
+
+.footer .amop-home a {
+    background: url(../img/ico_aphome.svg)center center no-repeat;
+}
+
+/* 푸터 로고 */
+.footer .foot-logo img {
+    width: 150px;
+}
+
+/* 푸터 카피라이터 */
+.footer .copyright {
+    font-size: 16px;
+    color: #999;
+}
+
+/* 푸터 WA 마크 */
+.footer .wa-btn {
+    font-size: 0;
+}
+
+.footer .wa-btn img {
+    width: 50px;
+}
+
+

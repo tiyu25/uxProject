@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="MDI_linkedin" data-name="MDI / linkedin" opacity="0.6">
+    <g id="Boundary" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+    </g>
+    <path id="Path_linkedin" data-name="Path / linkedin" d="M22.163,22.163V15.792a3.919,3.919,0,0,0-3.919-3.919,3.484,3.484,0,0,0-2.789,1.563V12.1H12.1V22.163h3.354V16.237a1.677,1.677,0,1,1,3.354,0v5.926h3.354M8.195,10.214a2.026,2.026,0,1,0-2.032-2.02,2.02,2.02,0,0,0,2.032,2.02M9.866,22.163V12.1H6.536V22.163Z" transform="translate(-2.163 -2.163)" fill="#ccc" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+  </g>
+</svg>
