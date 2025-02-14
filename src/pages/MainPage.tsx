@@ -4,7 +4,6 @@ import PeopleSection from "../components/sections/PeopleSection";
 import BlogSection from "../components/sections/BlogSection";
 import PressSection from "../components/sections/PressSection";
 
-// 섹션들을 배열로 묶기
 const sections = [
   { id: "main", component: <MainSection /> },
   { id: "people", component: <PeopleSection /> },
@@ -16,7 +15,9 @@ const MainPage = (): React.JSX.Element => {
   return (
     <>
       {sections.map(({ id, component }) => (
-        <section key={id}>{component}</section>
+        <section id={id} key={id}>
+          {component}
+        </section>
       ))}
     </>
   );
