@@ -317,3 +317,85 @@
   color: #808080;
   line-height: 1.3;
 }
+
+/* BlogSection */
+.section-wrap {
+  max-width: 1820px;
+  padding: 120px 30px;
+  margin: 0 auto;
+}
+.section-wrap .sec-top {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.more-btn {
+  position: absolute;
+  top: 26px;
+  right: 10px;
+  background-image: url(https://stories.amorepacific.com/wp-content/uploads/2023/09/ico_arrow-n.png);
+  background-repeat: no-repeat;
+  background-position: right bottom -2px;
+  background-size: 60%;
+  padding-right: 30px;
+  border-bottom: 1px solid #000;
+  text-transform: capitalize;
+  height: 29px;
+  color: #000;
+  font-family: "Noto Sans KR", "roc-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.sec-cont-wrap {
+  display: flex;
+}
+
+.sec-cont-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.sec-cont-list li {
+  width: 100%;
+}
+
+.data-item {
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+}
+
+.data-img-wrap {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+  margin: 0 20px 0 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.data-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+  transform: scale(1);
+}
+
+.data-title {
+  color: #000;
+  height: 30px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 32px;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
