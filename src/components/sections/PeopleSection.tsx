@@ -12,7 +12,12 @@ function PeopleSection() {
 
   return (
     <div className="people-cont">
-      <h2>INSPIRATION</h2>
+      <div className="sec-tit-wrap">
+        <h2 className="sec-tit">INSPIRATION</h2>
+        <p className="sec-sub-tit">
+          아모레퍼시픽이 더 아름다운 세상을 위한 영감을 전합니다.
+        </p>
+      </div>
       <Slider {...settings}>
         {programs.map((program, index) => (
           <a href={program.link} key={index} className="people-item">

@@ -98,15 +98,16 @@
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 20px;
   line-height: 1.375;
 }
 .beauty-tit {
   display: inline-block;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: "···";
+  text-overflow: ellipsis;
   text-align: center;
   padding: 0;
   line-height: 1.5;
@@ -161,11 +162,15 @@
   position: relative;
 }
 
-.people-cont h2 {
+.sec-tit-wrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-bottom: 40px;
+  gap: 10px;
+}
+
+.sec-tit {
   font-size: 30px;
   font-weight: 500;
 }
@@ -291,12 +296,21 @@
 }
 
 .txt-wrap .people-title {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: clamp(18px, 4vw, 21px);
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .txt-wrap .people-info {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: clamp(14px, 3vw, 17px);
   font-weight: 300;
   margin-top: 12px;
