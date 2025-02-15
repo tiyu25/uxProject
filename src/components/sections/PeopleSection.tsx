@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { programs } from "../../constants/PeopleData";
+import { PeopleData } from "../../constants/PeopleData";
 import Slider from "react-slick";
 
 function PeopleSection() {
@@ -19,19 +19,19 @@ function PeopleSection() {
         </p>
       </div>
       <Slider {...settings}>
-        {programs.map((program, index) => (
-          <a href={program.link} key={index} className="people-item">
+        {PeopleData.map((PeopleData, index) => (
+          <a href={PeopleData.link} key={index} className="people-item">
             <div className="img-wrap">
               <img
-                src={program.image}
-                alt={program.title}
+                src={PeopleData.image}
+                alt={PeopleData.title}
                 className="people-image"
               />
               <button className="btn">상세보기 +</button>
             </div>
             <div className="txt-wrap">
-              <h3 className="people-title">{program.title}</h3>
-              <p className="people-info">{program.membersInfo}</p>
+              <h3 className="people-title">{PeopleData.title}</h3>
+              <p className="people-info">{PeopleData.membersInfo}</p>
             </div>
           </a>
         ))}
