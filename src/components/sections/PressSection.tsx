@@ -15,16 +15,15 @@ function PressSection() {
       </div>
       <div className="sec-cont-wrap">
         <ul className="sec-cont-list">
-          {PressData.map((PressData, index) => (
-            <li>
-              <a href={PressData.link} key={index} className="data-item">
+          {PressData.map((PressData) => (
+            <li key={PressData.link}>
+              <a href={PressData.link} className="data-item">
                 <div className="data-img-wrap">
                   <img
                     src={PressData.image}
                     alt={PressData.title}
                     className="data-image"
                   />
-                  <button className="btn">상세보기 +</button>
                 </div>
                 <div className="data-txt-wrap">
                   <p className="data-date">{PressData.date}</p>

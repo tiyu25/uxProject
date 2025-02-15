@@ -17,16 +17,15 @@ function BlogSection() {
       </div>
       <div className="sec-cont-wrap">
         <ul className="sec-cont-list">
-          {BlogData.map((BlogData, index) => (
-            <li>
-              <a href={BlogData.link} key={index} className="data-item">
+          {BlogData.map((BlogData) => (
+            <li key={BlogData.link}>
+              <a href={BlogData.link} className="data-item">
                 <div className="data-img-wrap">
                   <img
                     src={BlogData.image}
                     alt={BlogData.title}
                     className="data-image"
                   />
-                  <button className="btn">상세보기 +</button>
                 </div>
                 <div className="data-txt-wrap">
                   <h3 className="data-title">{BlogData.title}</h3>

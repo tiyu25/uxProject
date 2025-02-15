@@ -7,8 +7,8 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    autoplay: true, // 자동 재생 활성화
-    autoplaySpeed: 3000, // 슬라이드 간 간격 (밀리초 단위, 3초)
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (

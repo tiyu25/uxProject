@@ -11,27 +11,29 @@ function PeopleSection() {
   };
 
   return (
-    <div className="people-cont">
-      <div className="sec-tit-wrap">
-        <h2 className="sec-tit">INSPIRATION</h2>
-        <p className="sec-sub-tit">
-          아모레퍼시픽이 더 아름다운 세상을 위한 영감을 전합니다.
-        </p>
+    <div className="section-wrap">
+      <div className="sec-top">
+        <div className="sec-tit-wrap">
+          <h2 className="sec-tit">INSPIRATION</h2>
+          <p className="sec-sub-tit">
+            아모레퍼시픽이 더 아름다운 세상을 위한 영감을 전합니다.
+          </p>
+        </div>
       </div>
       <Slider {...settings}>
-        {PeopleData.map((PeopleData, index) => (
-          <a href={PeopleData.link} key={index} className="people-item">
-            <div className="img-wrap">
+        {PeopleData.map((PeopleData) => (
+          <a href={PeopleData.link} key={PeopleData.link} className="data-item">
+            <div className="data-img-wrap">
               <img
                 src={PeopleData.image}
                 alt={PeopleData.title}
-                className="people-image"
+                className="data-image"
               />
               <button className="btn">상세보기 +</button>
             </div>
-            <div className="txt-wrap">
-              <h3 className="people-title">{PeopleData.title}</h3>
-              <p className="people-info">{PeopleData.membersInfo}</p>
+            <div className="data-txt-wrap">
+              <h3 className="data-title">{PeopleData.title}</h3>
+              <p className="data-info">{PeopleData.membersInfo}</p>
             </div>
           </a>
         ))}

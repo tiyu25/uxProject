@@ -1,6 +1,117 @@
-/* main-section */
+/* Section css */
+.section-wrap {
+  max-width: 1820px;
+  padding: 120px 30px;
+  margin: 0 auto;
+}
+
+.section-wrap .sec-top {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.sec-tit-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.sec-tit {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sec-sub-tit {
+  font-weight: 400;
+  color: #333;
+}
+
+.more-btn {
+  position: absolute;
+  top: 26px;
+  right: 10px;
+  background-repeat: no-repeat;
+  background-position: right bottom -2px;
+  background-size: 60%;
+  padding-right: 30px;
+  border-bottom: 1px solid #000;
+  text-transform: capitalize;
+  height: 29px;
+  color: #000;
+  /* font-family: "Noto Sans KR", "roc-grotesk", sans-serif; */
+  /* font-weight: 500; */
+  /* font-size: 21px; */
+}
+
+.sec-cont-list {
+  display: flex;
+  /* gap: 15px; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sec-cont-list li {
+  width: calc(33.333% - 10px);
+  /* max-width: 400px; 최대 너비 제한 */
+}
+
+.data-item {
+  flex-direction: column;
+  gap: 30px;
+  display: flex !important;
+}
+
+.data-img-wrap {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 3/4; */
+  margin: 0 20px 0 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.data-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+  transform: scale(1);
+}
+
+.data-txt-wrap .data-title {
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.data-txt-wrap .data-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: #888;
+}
+
+.data-txt-wrap .data-date {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* main-section //////////////////////////////////////////////*/
 .main-section {
   display: flex;
+  max-width: 1820px;
+  padding: 0px 30px 120px;
+  margin: 0 auto;
 }
 .carousel {
   position: sticky;
@@ -62,7 +173,7 @@
   width: auto;
   height: 28px;
   font-size: 12px;
-  font-weight: 700;
+  /* font-weight: 700; */
   z-index: 1;
 }
 .cont-media span {
@@ -89,17 +200,16 @@
   transform: scale(1);
 }
 .tab-cont-tit {
-  font-family: "roc-grotesk", sans-serif;
+  /* font-family: "roc-grotesk", sans-serif; */
   width: 100%;
   margin-top: 16px;
-  font-weight: 600;
+  /* font-weight: 600; */
   white-space: normal;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* overflow: hidden; */
-  font-size: 20px;
   line-height: 1.375;
 }
 .beauty-tit {
@@ -108,13 +218,18 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  text-align: center;
   padding: 0;
   line-height: 1.5;
   margin-top: 5px;
   font-size: 24px;
   font-weight: 500;
   letter-spacing: -0.16px;
+}
+
+.beauty-sub-tit {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
 }
 
 .tab-btns {
@@ -129,9 +244,9 @@
   background-color: #fff;
 }
 .tab-btns button {
-  font-family: "roc-grotesk", sans-serif;
+  /* font-family: "roc-grotesk", sans-serif; */
   padding-bottom: 10px;
-  font-weight: 500;
+  font-weight: 600;
   border-bottom: 0;
   line-height: 1.32;
   font-size: 24px;
@@ -148,51 +263,30 @@
   left: auto !important;
 }
 
-/* PeopleSection */
+/* PeopleSection //////////////////////////////////////////////*/
 #people {
-  margin: 300px 0 90px;
   overflow: hidden;
 }
 
-.people-cont {
+/* PeopleSection slide */
+.section-wrap .slick-slider {
+  position: relative;
+}
+
+.section-wrap .slick-list {
   width: 100%;
-  max-width: 1840px;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.sec-tit-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-  gap: 10px;
-}
-
-.sec-tit {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.people-cont .slick-slider {
-  position: relative;
-}
-
-.people-cont .slick-list {
-  width: 94%;
   overflow: hidden;
   margin: 0 auto;
 }
 
-.people-cont .slick-track {
+.section-wrap .slick-track {
   display: flex;
   gap: 50px;
   justify-content: center;
 }
 
-.people-cont .slick-prev,
-.people-cont .slick-next {
+.section-wrap .slick-prev,
+.section-wrap .slick-next {
   z-index: 2;
   top: 50%;
   transform: translateY(-130%);
@@ -209,55 +303,45 @@
   border-radius: 50%;
 }
 
-.people-cont .slick-prev:focus,
-.people-cont .slick-next:focus {
+.section-wrap .slick-prev:focus,
+.section-wrap .slick-next:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.people-cont .slick-prev:hover,
-.people-cont .slick-next:hover {
+.section-wrap .slick-prev:hover,
+.section-wrap .slick-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.people-cont .slick-prev {
+.section-wrap .slick-prev {
   left: 0px;
 }
 
-.people-cont .slick-next {
+.section-wrap .slick-next {
   right: 0px;
 }
 
-.people-cont .slick-prev::before {
+.section-wrap .slick-prev::before {
   content: "<";
   font-size: 30px;
   color: white;
 }
 
-.people-cont .slick-next::before {
+.section-wrap .slick-next::before {
   content: ">";
   font-size: 30px;
   color: white;
 }
 
-.people-item {
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* width: 300px; */
-  height: 400px;
+#people .data-item {
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
-.img-wrap {
-  width: 100%;
-  overflow: hidden;
+#people .data-img-wrap {
   position: relative;
-  border-radius: 16px;
 }
 
-.img-wrap .btn {
+#people .data-img-wrap .btn {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -273,129 +357,37 @@
   transition: opacity 0.3s ease;
 }
 
-.img-wrap:hover .btn {
+#people .data-img-wrap:hover .btn {
   opacity: 1;
 }
 
-.img-wrap img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 16px;
+#people .data-img-wrap img {
   transition: transform 0.3s ease;
 }
 
-.img-wrap:hover img {
+#people .data-img-wrap:hover img {
   transform: scale(1.05);
   opacity: 0.7;
 }
 
-.txt-wrap {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
+/* BlogSection ////////////////////////////////////////////// */
+#blog .data-img-wrap {
+  aspect-ratio: 3 / 3.75;
 }
-
-.txt-wrap .people-title {
-  display: inline-block;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: clamp(18px, 4vw, 21px);
-  font-weight: bold;
-  margin-bottom: 8px;
+#blog .data-img-wrap:hover img {
+  transform: scale(1.05);
 }
-
-.txt-wrap .people-info {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: clamp(14px, 3vw, 17px);
-  font-weight: 300;
-  margin-top: 12px;
-  color: #808080;
-  line-height: 1.3;
-}
-
-/* BlogSection */
-.section-wrap {
-  max-width: 1820px;
-  padding: 120px 30px;
-  margin: 0 auto;
-}
-.section-wrap .sec-top {
-  position: relative;
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 0;
-}
-.more-btn {
-  position: absolute;
-  top: 26px;
-  right: 10px;
+#blog .more-btn {
   background-image: url(https://stories.amorepacific.com/wp-content/uploads/2023/09/ico_arrow-n.png);
-  background-repeat: no-repeat;
-  background-position: right bottom -2px;
-  background-size: 60%;
-  padding-right: 30px;
-  border-bottom: 1px solid #000;
-  text-transform: capitalize;
-  height: 29px;
-  color: #000;
-  font-family: "Noto Sans KR", "roc-grotesk", sans-serif;
-  font-weight: 500;
-  font-size: 21px;
 }
 
-.sec-cont-wrap {
-  display: flex;
+/* PressSection ////////////////////////////////////////////// */
+#press {
+  margin-bottom: 120px;
 }
-
-.sec-cont-list {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: nowrap;
+#press .sec-cont-list {
+  gap: 40px 15px;
 }
-
-.sec-cont-list li {
-  width: 100%;
-}
-
-.data-item {
-  flex-direction: column;
-  gap: 30px;
-  display: flex;
-}
-
-.data-img-wrap {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3/4;
-  margin: 0 20px 0 0;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.data-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.4s;
-  transform: scale(1);
-}
-
-.data-title {
-  color: #000;
-  height: 30px;
-  font-size: 24px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  line-height: 32px;
-  white-space: normal;
-  overflow: hidden;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  word-wrap: normal;
+#press .more-btn {
+  background-image: url(https://stories.amorepacific.com/wp-content/uploads/2023/09/ico_arrow-n.png);
 }
