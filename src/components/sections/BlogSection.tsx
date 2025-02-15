@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BlogData } from "../../constants/BlogData";
-import Slider from "react-slick";
 
 function BlogSection() {
   return (
