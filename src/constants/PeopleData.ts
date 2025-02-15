@@ -1,11 +1,11 @@
-export interface PeopleData {
+export interface PeopleItem {
   title: string;
   membersInfo: string;
   image: string;
   link: string;
 }
 
-export const PeopleData: PeopleData[] = [
+export const PeopleData: PeopleItem[] = [
   {
     title: "#아모레퍼시픽 라네즈 BA팀 김종우",
     membersInfo: "라네즈 BA팀 김종우",
