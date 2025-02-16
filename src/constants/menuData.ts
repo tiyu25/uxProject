@@ -4,9 +4,9 @@ export interface MenuItem {
 }
 
 export const menuData: MenuItem[] = [
-    { name: "INSPIRE", path: "/" },
-    { name: "HERITAGE", path: "/" },
-    { name: "NEW BEAUTY", path: "/" },
-    { name: "ESG", path: "/" },
-    { name: "PRESS", path: "/" }
+    { name: "INSPIRE", path: "/inspire" },
+    { name: "HERITAGE", path: "/heritage" },
+    { name: "NEW BEAUTY", path: "/newbeauty" },
+    { name: "ESG", path: "/esg" },
+    { name: "PRESS", path: "/press" }
 ]
