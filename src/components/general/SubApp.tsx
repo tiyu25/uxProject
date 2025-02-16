@@ -14,7 +14,7 @@ interface Post {
   imageUrl?: string;
 }
 
-function App() {
+function SubApp() {
   const [posts, setPosts] = useState<Post[]>([]);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="container">
-      <Title />
+      <Title title="" description="" />
       <div className="section">
         <Posts posts={currentPosts} />
       </div>
@@ -51,6 +51,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
-export default App;
+export default SubApp;

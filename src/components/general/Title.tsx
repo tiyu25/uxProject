@@ -1,8 +1,13 @@
-const Title = () => {
+interface TitleProps{
+  title:string;
+  description: string;
+}
+
+const Title: React.FC<TitleProps> = ({title, description}) => {
   return (
     <div className="title">
-      <h2>SubPage Title</h2>
-      <p>아모레퍼시픽이 더 아름다운 세상을 위한 영감을 전합니다.</p>
+      <h2>{title}</h2>
+      <p>{description}</p>
     </div>
   );
 };
