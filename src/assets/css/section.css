@@ -42,36 +42,22 @@
   text-transform: capitalize;
   height: 29px;
   color: #000;
-  /* font-family: "Noto Sans KR", "roc-grotesk", sans-serif; */
-  /* font-weight: 500; */
-  /* font-size: 21px; */
 }
 
 .sec-cont-list {
   display: flex;
-  /* gap: 15px; */
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .sec-cont-list li {
   width: calc(33.333% - 10px);
-  /* max-width: 400px; 최대 너비 제한 */
 }
 
 .data-item {
   flex-direction: column;
   gap: 30px;
   display: flex !important;
-}
-
-.data-img-wrap {
-  width: 100%;
-  height: 100%;
-  /* aspect-ratio: 3/4; */
-  margin: 0 20px 0 0;
-  overflow: hidden;
-  flex-shrink: 0;
 }
 
 .data-img-wrap img {
@@ -173,7 +159,6 @@
   width: auto;
   height: 28px;
   font-size: 12px;
-  /* font-weight: 700; */
   z-index: 1;
 }
 .cont-media span {
@@ -200,16 +185,12 @@
   transform: scale(1);
 }
 .tab-cont-tit {
-  /* font-family: "roc-grotesk", sans-serif; */
   width: 100%;
   margin-top: 16px;
-  /* font-weight: 600; */
   white-space: normal;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* flex-wrap: wrap; */
-  /* overflow: hidden; */
   line-height: 1.375;
 }
 .beauty-tit {
@@ -244,7 +225,6 @@
   background-color: #fff;
 }
 .tab-btns button {
-  /* font-family: "roc-grotesk", sans-serif; */
   padding-bottom: 10px;
   font-weight: 600;
   border-bottom: 0;
@@ -263,12 +243,7 @@
   left: auto !important;
 }
 
-/* PeopleSection //////////////////////////////////////////////*/
-#people {
-  overflow: hidden;
-}
-
-/* PeopleSection slide */
+/* PeopleSection slide button////////////////////////////////////////////// */
 .section-wrap .slick-slider {
   position: relative;
 }
@@ -277,12 +252,6 @@
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
-}
-
-.section-wrap .slick-track {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
 }
 
 .section-wrap .slick-prev,
@@ -333,6 +302,19 @@
   color: white;
 }
 
+/* PeopleSection //////////////////////////////////////////////*/
+#people {
+  overflow: hidden;
+}
+
+#people .slick-slide {
+  width: 100%;
+}
+
+#people .slick-slide div {
+  margin: 0 10px;
+}
+
 #people .data-item {
   text-align: center;
 }
@@ -380,6 +362,9 @@
 #blog .more-btn {
   background-image: url(https://stories.amorepacific.com/wp-content/uploads/2023/09/ico_arrow-n.png);
 }
+#blog .data-item {
+  margin: 20px;
+}
 
 /* PressSection ////////////////////////////////////////////// */
 #press {
@@ -390,4 +375,7 @@
 }
 #press .more-btn {
   background-image: url(https://stories.amorepacific.com/wp-content/uploads/2023/09/ico_arrow-n.png);
+}
+#press .sec-cont-list {
+  flex-wrap: wrap;
 }
