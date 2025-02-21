@@ -69,6 +69,36 @@ header {
     width: 32px;
 }
 
+.breadcrumb {
+    margin-top: 30px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb ul li {
+    margin-right: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #999;
+}
+
+.breadcrumb ul li span {
+    color: #999;
+}
+
+.breadcrumb ul li:after {
+    content: ">";
+    margin-left: 8px;
+}
+
+.breadcrumb ul li:last-child::after {
+    display: none;
+}
+
+
 /******************** Footer ********************/
 .footer {
     background: #000;

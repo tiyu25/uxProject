@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Pagination from './Pagination';
 import Posts from './Posts';
 import Title from './Title';
+import Breadcrumb from '../layout/\bBreadcrumb';
 
 interface Post {
   userId: number;
@@ -44,6 +45,7 @@ const SubApp: React.FC<SubAppProps> = ({title, description}) => {
 
   return (
     <div className="container wrap-inner">
+      <Breadcrumb />
       <Title title={title} description={description} />
       <div className="section">
         <Posts posts={currentPosts} />
