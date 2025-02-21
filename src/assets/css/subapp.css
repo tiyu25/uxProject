@@ -19,16 +19,16 @@ h4 {
   width: 100%;
 }
 .title {
-  padding: 40px 0;
+  padding: 80px 0;
   max-width: 1820px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  /* flex-direction: column; */
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .title h2 {
-  /* text-align: left; */
+  line-height: 80px;
 }
 .title p {
   position: absolute;
@@ -36,6 +36,7 @@ h4 {
   transform: translateX(-50%);
   font-size: 24px;
   font-weight: 700;
+  line-height: 80px;
 }
 
 .section {
@@ -58,7 +59,8 @@ h4 {
   width: 100%;
   height: auto;
 }
-.posts h3, .posts p {
+.posts h3,
+.posts p {
   width: 100%;
   line-height: 40px;
 }
@@ -84,7 +86,6 @@ nav {
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
-
 }
 .pagination a {
   display: block;

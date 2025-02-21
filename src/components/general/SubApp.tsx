@@ -13,8 +13,12 @@ interface Post {
   subtitle?: string;
   imageUrl?: string;
 }
+interface SubAppProps {
+  title: string;
+  description: string;
+}
 
-function SubApp() {
+const SubApp: React.FC<SubAppProps> = ({title, description}) => {
   const [posts, setPosts] = useState<Post[]>([]);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -40,7 +44,7 @@ function SubApp() {
 
   return (
     <div className="container">
-      <Title title="" description="" />
+      <Title title={title} description={description} />
       <div className="section">
         <Posts posts={currentPosts} />
       </div>

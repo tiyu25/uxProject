@@ -1,12 +1,11 @@
-import Title from '../components/general/Title';
+import SubApp from '../components/general/SubApp';
 
 const SubpgInspire = () => {
   return (
     <div>
-      <Title
+      <SubApp
         title="INSPIRE"
-        description="
-아모레퍼시픽이 더 아름다운 세상을 위한 영감을 전합니다."
+        description="아모레퍼시픽이 더 아름다운 세상을 위한 영감을 전합니다."
       />
     </div>
   );

@@ -1,8 +1,8 @@
-import Title from '../components/general/Title';
+import SubApp from '../components/general/SubApp';
 const SubpgPress = () => {
   return (
     <div>
-      <Title title="PRESS" description="아모레퍼시픽의 소식을 전합니다." />
+      <SubApp title="PRESS" description="아모레퍼시픽의 소식을 전합니다." />
     </div>
   );
 };
