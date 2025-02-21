@@ -73,6 +73,13 @@ h4 {
 .posts p {
   width: 100%;
   line-height: 40px;
+  height: 40px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;;
 }
 
 .navContainer {
