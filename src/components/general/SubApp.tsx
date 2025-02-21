@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Pagination from './Pagination';
 import Posts from './Posts';
 import Title from './Title';
-import Breadcrumb from '../layout/\bBreadcrumb';
+import Breadcrumb from '../layout/Breadcrumb';
 
 interface Post {
   userId: number;
