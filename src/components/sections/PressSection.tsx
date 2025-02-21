@@ -3,7 +3,7 @@ import { PressData } from "../../constants/PressData";
 
 function PressSection() {
   return (
-    <div className="section-wrap">
+    <div className="section-wrap wrap-inner">
       <div className="sec-top">
         <div className="sec-tit-wrap">
           <h2 className="sec-tit">PRESS</h2>

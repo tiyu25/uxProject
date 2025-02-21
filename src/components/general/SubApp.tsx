@@ -43,7 +43,7 @@ const SubApp: React.FC<SubAppProps> = ({title, description}) => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container">
+    <div className="container wrap-inner">
       <Title title={title} description={description} />
       <div className="section">
         <Posts posts={currentPosts} />
