@@ -5,6 +5,7 @@ import Pagination from './Pagination';
 import Posts from './Posts';
 import Title from './Title';
 import Breadcrumb from '../layout/Breadcrumb';
+import SearchFilter from './SearchFilter'
 
 interface Post {
   userId: number;
@@ -47,6 +48,7 @@ const SubApp: React.FC<SubAppProps> = ({title, description}) => {
     <div className="container wrap-inner">
       <Breadcrumb />
       <Title title={title} description={description} />
+      <SearchFilter />
       <div className="section">
         <Posts posts={currentPosts} />
       </div>

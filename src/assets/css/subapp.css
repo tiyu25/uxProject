@@ -79,7 +79,7 @@ h4 {
   text-overflow: ellipsis;
   word-break: break-all;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;;
+  -webkit-line-clamp: 1;
 }
 
 .navContainer {
@@ -110,5 +110,30 @@ nav {
   color: black;
 }
 .active {
+  border: 1px solid black;
+}
+
+/* SearchFilter */
+.searchFilter {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.searchFilter form {
+  width: 410px;
+  border: 1px solid black;
+}
+.options {
+  width: 100px;
+  height: 32px;
+}
+.searchInput {
+  width: 200px;
+  height: 30px;
+  border: none;
+}
+.searchFilter button {
+  width: 100px;
+  height: 32px;
+  cursor: pointer;
   border: 1px solid black;
 }
