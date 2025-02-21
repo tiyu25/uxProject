@@ -25,7 +25,7 @@ const Posts: React.FC<PostsProps> = ({ posts }): React.JSX.Element => {
           <h4 className="post-subtitle">
             {(post.subtitle || defaultSubtitle).slice(0, 11)}
           </h4>
-          <h3 className="post-title">{post.title.slice(0, 15)}</h3>
+          <h3 className="post-title">{post.title}</h3>
           <p className="post-body">{post.title.slice(0, 60)}</p>
         </div>
       ))}
